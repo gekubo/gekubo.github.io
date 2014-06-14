@@ -1,370 +1,980 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Home</title>
-		<link rel="icon" href="images/favicon.ico">
-		<link rel="shortcut icon" href="images/favicon.ico" />
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/camera.css">
-		<link rel="stylesheet" href="css/form.css">
-		<script src="js/jquery.js"></script>
-		<script src="js/jquery-migrate-1.1.1.js"></script>
-		<script src="js/superfish.js"></script>
-		<script src="js/forms.js"></script>
-		<script src="js/jquery.ui.totop.js"></script>
-		<script src="js/jquery.equalheights.js"></script>
-		<script src="js/jquery.easing.1.3.js"></script>
-		<script src="js/jquery.ui.totop.js"></script>
-		<script src="js/tms-0.4.1.js"></script>
-		<script>
-			$(document).ready(function(){
-				$('.slider_wrapper')._TMS({
-					show:0,
-					pauseOnHover:false,
-					prevBu:'.prev',
-					nextBu:'.next',
-					playBu:false,
-					duration:800,
-					preset:'fade',
-					pagination:true,//'.pagination',true,'<ul></ul>'
-					pagNums:false,
-					slideshow:8000,
-					numStatus:false,
-					banners: 'fade',
-					waitBannerAnimation:false,
-					progressBar:false
-				});
-			});
-			$(document).ready(function(){
-				!function(){
-			var map=[]
-			 ,names=[]
-			 ,win=$(window)
-			 ,header=$('header')
-			 ,currClass
-			$('.content').each(function(n){
-			 map[n]=this.offsetTop
-			 names[n]=$(this).attr('id')
-			})
-			win
-			 .on('scroll',function(){
-				var i=0
-				while(map[i++]<=win.scrollTop());
-				if(currClass!==names[i-2])
-				currClass=names[i-2]
-				header.removeAttr("class").addClass(names[i-2])
-			 })
-			}(); });
-					function goToByScroll(id){
-				$('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
-				}
-				$(document).ready(function(){
-					$().UItoTop({ easingType: 'easeOutQuart' });
-				});
-		</script>
-		<!--[if lt IE 8]>
-			<div style=' clear: both; text-align:center; position: relative;'>
-				<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-					<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-				</a>
-			</div>
-		<![endif]-->
-		<!--[if lt IE 9]>
-			<script src="js/html5shiv.js"></script>
-			<link rel="stylesheet" media="screen" href="css/ie.css">
-		<![endif]-->
-	</head>
-	<body class="">
-<!--==============================header=================================-->
-		<header class="page1">
-			<div class="container_12">
-				<div class="grid_12">
-					<h1><a href="#" onClick="goToByScroll('page1'); return false;"><img src="images/logo.png" alt="Gerald Harris attorney at law"></a></h1>
-					<div class="menu_block">
-						<nav class="">
-							<ul class="sf-menu">
-								<li class="current men"><a onClick="goToByScroll('page1'); return false;" href="#">Home </a> <strong class="hover"></strong></li>
-								<li class="men1"><a onClick="goToByScroll('page2'); return false;" href="#">About</a><strong class="hover"></strong></li>
-								<li class=" men2"><a onClick="goToByScroll('page3'); return false;" href="#">Services</a> <strong class="hover"></strong></li>
-								<li class=" men3"><a onClick="goToByScroll('page4'); return false;" href="#">Clients</a> <strong class="hover"></strong></li>
-								<li class=" men4"><a onClick="goToByScroll('page5'); return false;" href="#">Contacts</a> <strong class="hover"></strong></li>
-							</ul>
-						</nav>
-						<div class="clear"></div>
-					</div>
-				</div>
-				<div class="clear"></div>
-			</div>
-		</header>
-<!--=======content================================-->
-		<div id="page1" class="content">
-			<div class="ic">More Website Templates @ TemplateMonster.com - September 9, 2013!</div>
-			<div class="container_12">
-				<div class="grid_12">
-					<div class="slider_wrapper">
-						<ul class="items">
-							<li>
-								<img src="images/spacer.gif" alt="">
-								<div class="caption banner">
-									<h2>Let Us Show You the Way to Success</h2>
-								</div>
-							</li>
-							<li>
-								<img src="images/spacer.gif" alt="">
-								<div class="caption banner">
-									<h2>Interminable Energy for Your Project</h2>
-								</div>
-							</li>
-							<li>
-								<img src="images/spacer.gif" alt="">
-								<div class="caption banner">
-									<h2>We know how to solve your problems!</h2>
-								</div>
-							</li>
-							<li>
-								<img src="images/spacer.gif" alt="">
-								<div class="caption banner">
-									<h2>Make your business a booming one!</h2>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="socials">
-						<a href="#"></a>
-						<a href="#"></a>
-						<a href="#"></a>
-						<a href="#"></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="page2" class="content">
-			<div class="container_12">
-				<div class="grid_12">
-					<div class="slogan">
-						<h3>Only Professional <a onClick="goToByScroll('page3'); return false;" href="#"><span>Services</span></a> for Our <a onClick="goToByScroll('page4'); return false;" href="#"><em>Clients</em></a></h3>
-						<div class="text1">
-							<a href="http://blog.templatemonster.com/free-website-templates/" rel="nofollow" class="tm_link"> Click here</a> for more info about this free website template created by TemplateMonster.com <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies
-						</div>
-					</div>
-				</div>
-				<div class="grid_3">
-					<div class="box maxheight">
-						<img src="images/box_img1.jpg" alt="">
-						<div class="text1"><a href="#">Laura Stegner</a></div>senior manager
-						<div class="socials1">
-							<a href="#"></a>
-							<a href="#"></a>
-							<a href="#"></a>
-							<a href="#"></a>
-						</div>
-					</div>
-				</div>
-				<div class="grid_3">
-					<div class="box maxheight">
-						<img src="images/box_img2.jpg" alt="">
-						<div class="text1"><a href="#">Anton Stegner</a></div> manager
-						<div class="socials1">
-							<a href="#"></a>
-							<a href="#"></a>
-							<a href="#"></a>
-							<a href="#"></a>
-						</div>
-					</div>
-				</div>
-				<div class="grid_3">
-					<div class="box maxheight">
-						<img src="images/box_img3.jpg" alt="">
-						<div class="text1"><a href="#">Lisa Haddon </a></div>accounter
-						<div class="socials1">
-							<a href="#"></a>
-							<a href="#"></a>
-							<a href="#"></a>
-							<a href="#"></a>
-						</div>
-					</div>
-				</div>
-				<div class="grid_3">
-					<div class="box maxheight">
-						<img src="images/box_img4.jpg" alt="">
-						<div class="text1"><a href="#">Bradley Grosh</a></div>director
-						<div class="socials1">
-							<a href="#"></a>
-							<a href="#"></a>
-							<a href="#"></a>
-							<a href="#"></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="page3" class="content">
-			<div class="container_12">
-				<div class="grid_12">
-					<div class="slogan">
-						<h3>Our Services</h3>
-						<div class="text1">
-							Vivamus at magna non nunc tristique rhoncus. Aliquam nibh ante, egestas id dictum a, commodo luctus libero. Praesent faucibus malesuada faucibus. Donec laoreet metus id laoreet malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur orci sed nulla facilisis consequat. Curabitur vel lorem sit amet nulla ullamcorper fermentum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						</div>
-					</div>
-				</div>
-				<div class="grid_3">
-					<div class="box maxheight1">
-						<img src="images/box1_img1.png" alt="">
-						<div class="text1"><a href="#">Strategy</a></div>Vivamus at magna non nunc tristique rhoncus. Aliquam nibh ante, egestas id dictum a, commodo luctus libero.
-					</div>
-				</div>
-				<div class="grid_3">
-					<div class="box maxheight1">
-						<img src="images/box1_img2.png" alt="">
-						<div class="text1"><a href="#">Research</a></div>Ite auctor non pellentesque vel, aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibhh sagittis ut.
-					</div>
-				</div>
-				<div class="grid_3">
-					<div class="box maxheight1">
-						<img src="images/box1_img3.png" alt="">
-						<div class="text1"><a href="#">Development</a></div>Praesent faucibusamus ater asmagna non nunc tristique rhoncus. Aliquam nib ante, tas id dictum aluctus libero.
-					</div>
-				</div>
-				<div class="grid_3">
-					<div class="box maxheight1">
-						<img src="images/box1_img4.png" alt="">
-						<div class="text1"><a href="#">Consulting</a></div>Etiam dui eros na non nunc tristique rhoncus. Aliquam nibh ante, egestas id dictum a commodo luctus libero.
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="page4" class="content">
-			<div class="container_12">
-				<div class="grid_12">
-					<h3>Our Clients</h3>
-				</div>
-				<div class="companies">
-					<div class="grid_3">
-						<img src="images/logo1.jpg" alt="">
-						<div class="text1">Company Name</div>Aliquam nibh ante, egestas id dictum  wrecommodo luctus liberoaesent.
-						<br>
-						<a href="#">Go to Site</a>
-					</div>
-					<div class="grid_3">
-						<img src="images/logo2.jpg" alt="">
-						<div class="text1">Company Name</div>Fusce adipiscing quam id risus gittis, non consequat lacus interdumoin.
-						<br>
-						<a href="#">Go to Site</a>
-					</div>
-					<div class="grid_3">
-						<img src="images/logo3.jpg" alt="">
-						<div class="text1">Company Name</div>Quisque viverra nulla nunc, eu ultrices wertlibero ultricies egetasellus um.
-						<br>
-						<a href="#">Go to Site</a>
-					</div>
-					<div class="grid_3">
-						<img src="images/logo4.jpg" alt="">
-						<div class="text1">Company Name</div>Courrewerwe abitur vel lorem sit amet ulla ullamcorper fermentumn vitae.
-						<br>
-						<a href="#">Go to Site</a>
-					</div>
-					<div class="clear"></div>
-					<div class="grid_3">
-						<img src="images/logo5.jpg" alt="">
-						<div class="text1">Company Name</div>Oiliquam nibh ante, egestas id dictum  wrecommodo luctus liberoaesente.
-						<br>
-						<a href="#">Go to Site</a>
-					</div>
-					<div class="grid_3">
-						<img src="images/logo6.jpg" alt="">
-						<div class="text1">Company Name</div>Gusce adipiscing quam id risus gittis, non consequat lacus interdumoiju.
-						<br>
-						<a href="#">Go to Site</a>
-					</div>
-					<div class="grid_3">
-						<img src="images/logo7.jpg" alt="">
-						<div class="text1">Company Name</div>Niuisque viverra nulla nunc, eu ultrices wertlibero ultricies egetasellus ol.
-						<br>
-						<a href="#">Go to Site</a>
-					</div>
-					<div class="grid_3">
-						<img src="images/logo8.jpg" alt="">
-						<div class="text1">Company Name</div>Fouerourrewerwe abitur vel lorem sit amet ulla ullamcorper fermentum.
-						<br>
-						<a href="#">Go to Site</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="page5" class="content">
-			<div class="container_12">
-				<div class="grid_12">
-					<div class="slogan">
-						<h3>Get in Touch</h3>
-						<div class="text1">
-							Gyrto ivamus at magna non nunc tristique rhoncusu. Lliquam nibh ante, egestas id dictum a, commodo luctus mibero. Praesent faucibus malesuada faucibu. Monec laoreet metus id laoreet malesuadw.
-						</div>
-					</div>
-				</div>
-				<div class="clear"></div>
-				<div class="map">
-					<div class="grid_3">
-						<div class="text1">Address</div>
-						<address>
-							<dl>
-								<dt>The Company Name Inc.<br>
-								8901 Marmora Road,<br>
-								Glasgow, D04 89GR.
-								</dt>
-								<dd><span>Freephone:</span>+1 800 559 6580</dd>
-								<dd><span>Telephone:</span>+1 800 603 6035</dd>
-								<dd><span>FAX:</span>+1 800 889 9898</dd>
-								<dd>E-mail: <a href="#" class="link-1">mail@demolink.org</a></dd>
-								<dd>Skype: <a href="#" class="link-1">@skypename</a></dd>
-							</dl>
-						</address>
-					</div>
-					<div class="grid_3">
-						<div class="text1">&nbsp;</div>
-						<figure class="">
-							<iframe src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
-						</figure>
-					</div>
-					<div class="grid_5 prefix_1">
-						<div class="text1">Ask a Question</div>
-						<form id="form">
-						<div class="success_wrapper">
-						<div class="success">Contact form submitted!<br>
-						<strong>We will be in touch soon.</strong> </div></div>
-						<fieldset>
-						<label class="name">
-						<input type="text" value="Name:">
-						<br class="clear">
-						<span class="error error-empty">*This is not a valid name.</span><span class="empty error-empty">*This field is required.</span> </label>
-						<label class="email">
-						<input type="text" value="E-mail:">
-						<br class="clear">
-						<span class="error error-empty">*This is not a valid email address.</span><span class="empty error-empty">*This field is required.</span> </label>
-						<label class="message">
-						<textarea>Message:</textarea>
-						<br class="clear">
-						<span class="error">*The message is too short.</span> <span class="empty">*This field is required.</span> </label>
-						<div class="clear"></div>
-						<div class="btns"><a data-type="submit" class="link1">Send</a>
-						<div class="clear"></div>
-						</div></fieldset></form>
-					</div>
-					<div class="clear"></div>
-				</div>
-			</div>
-		</div>
-<!--==============================footer=================================-->
-		<footer>
-			<div class="container_12">
-				<div class="grid_12">
-					<div class="copy">
-						<a onClick="goToByScroll('page1'); return false;" href="#"><img src="images/footer_logo.png" alt=""></a>  &copy; 2013 | <a href="#">Privacy Policy</a> <br> Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a>
-					</div>
-				</div>
-				<div class="clear"></div>
-			</div>
-		</footer>
-	</body>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> </html><![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> </html><![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> </html><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        
+        <title>Home</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="./css/bootstrap.css" />
+        <link rel="stylesheet" href="./css/animations.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <script src="./js/vendor/modernizr-2.6.2.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+    <body><div id="top"></div>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+
+
+<section id="header" class="bg-color0">
+    <div class="container"><div class="row">
+
+      <a class="navbar-brand" href="#top"><img src="./example/logo.png" alt="" /></a>
+
+      <div class="col-sm-12 mainmenu_wrap"><div class="main-menu-icon visible-xs"><span></span><span></span><span></span></div>
+        <ul id="mainmenu" class="nav menu sf-menu responsive-menu superfish">
+          <li class="">
+            <a href="#features">About</a>
+          </li>
+          <li class="">
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li class="">
+            <a href="#belowcontent">Blog</a>
+          </li>
+          <li class="">
+            <a href="#info">Contact</a>
+          </li>
+          
+          <li class="dropdown">
+            <a href="./about.html">Pages</a>
+            <ul class="nav dropdown-menu">
+              <li class="">
+                <a href="./about.html">About</a>
+              </li>
+              <li class="">
+                <a href="./gallery-single.html">Gallery Item</a>
+              </li>
+              <li class="">
+                <a href="./blog.html">Blog</a>
+              </li>
+              <li class="">
+                <a href="./blog-single.html">Blog Post</a>
+              </li>
+              <li class="">
+                <a href="./404.html">404</a>
+              </li>
+              <li class="">
+                <a href="./contact.html">Contact</a>
+              </li>
+              <li class="">
+                <a href="./shortcodes.html">Shortcodes</a>
+              </li>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+      
+    </div></div>
+</section>
+
+<div class="color_section"><section id="mainslider" class="bg-color1"><div><div class="flexslider">
+  <ul class="slides">
+
+       
+    <li class="" data-bg="bg-color1">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 leftcontent">
+            <div class="slide_description">
+              <div class="imagetitle"><strong>Everything</strong> You Need</div>
+              <div class="imagedesc">Dignissimos ducimus qui blanditiis praesentium quas molestias excepturi sint occaecati cupiditate non provident.</div>
+              <a href="#" class="theme_btn">Get More Info</a>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <img class="leftcontent_image" alt="Left content image" src="./example/slide1.png" />
+          </div>
+
+        </div>
+      </div>
+    </li>
+    
+       
+    <li class="" data-bg="bg-color2">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 leftcontent">
+            <div class="slide_description">
+              <div class="imagetitle"><strong>Welcome</strong> To SimpleFlex</div>
+              <div class="imagedesc">Dignissimos ducimus qui blanditiis praesentium quas molestias excepturi sint occaecati cupiditate non provident.</div>
+              <a href="#" class="theme_btn">Get More Info</a>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <img class="leftcontent_image negative-margin-60" alt="Left content image" src="./example/slide4.png" />
+          </div>
+
+        </div>
+      </div>
+    </li>
+    
+       
+    <li class="" data-bg="bg-color3">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 leftcontent">
+            <div class="slide_description">
+              <div class="imagetitle"><strong>Fully</strong> Responsive</div>
+              <div class="imagedesc">Dignissimos ducimus qui blanditiis praesentium quas molestias excepturi sint occaecati cupiditate non provident.</div>
+              <a href="#" class="theme_btn">Get More Info</a>
+            </div>
+          </div>
+          
+          <div class="col-sm-6">
+            <img class="leftcontent_image" alt="Left content image" src="./example/slide3.png" />
+          </div>
+          
+
+        </div>
+      </div>
+    </li>
+    
+    
+  </ul>
+</div>
+</div></section></div>
+
+
+<section id="features" class="grey_section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+          <h2 class="block-header">About Us</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur<br />adipisicing elit. Nam, itaque.</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="block col-sm-4">
+          <div class="single_teaser intro_images">
+            <div class="introimg">
+              <img src="./example/icon-1.png" alt="" />
+            </div>
+            <h3><a href="#">Modern</a></h3>
+            <p class="introtext">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
+            </div>
+       </div>
+     
+        <div class="block col-sm-4">
+          <div class="single_teaser intro_images border-color2">
+            <div class="introimg">
+              <img src="./example/icon-2.png" alt="" />
+            </div>
+            <h3><a href="#">Simple</a></h3>
+            <p class="introtext">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
+            </div>
+       </div>
+     
+        <div class="block col-sm-4">
+          <div class="single_teaser intro_images border-color3">
+            <div class="introimg">
+              <img src="./example/icon-3.png" alt="" />
+            </div>
+            <h3><a href="#">Flexible</a></h3>
+            <p class="introtext">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
+            </div>
+       </div>
+     
+
+    </div>
+
+    
+  </div>
+</section>
+
+
+
+<section id="skills" class="dark_section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+          <h2 class="block-header">Our Skills</h2>
+          <p>SimpleFlex is focusing on<br />Web Design / WP Development / HTML Integration</p>
+        </div>
+      </div>
+
+  <div class="row text-center">
+     <div class="col-sm-3">
+        <span data-percent="75" class="chart">
+          <span class="percent"></span>
+        </span>
+        <h4 class="text-center">Web Design</h4>
+        <p>Lorem impum dolor sit amet tation ullamcorper suscipit.</p>
+      </div>
+      <div class="col-sm-3">
+        <span data-percent="62" class="chart">
+          <span class="percent"></span>
+        </span>
+        <h4 class="text-center">WordPress</h4>
+        <p>Lorem impum dolor sit amet tation ullamcorper suscipit.</p>
+      </div>
+      <div class="col-sm-3">
+        <span data-percent="57" class="chart">
+          <span class="percent"></span>
+        </span>
+        <h4 class="text-center">jQuery</h4>
+        <p>Lorem impum dolor  tation ullamcorper suscipit.sit amet </p>
+      </div>
+      <div class="col-sm-3">
+        <span data-percent="87" class="chart">
+          <span class="percent"></span>
+        </span>
+        <h4 class="text-center">HTML/CSS</h4>
+        <p>Lorem impum dolor tation ullamcorper suscipit. sit amet </p>
+      </div>
+   
+   </div>
+  </div>
+</section>
+
+
+<section id="testimonials" class="color_section bg-color2"><div class="container">
+  <div class="row">
+      <div class="col-sm-12">
+        <div class="carousel dxcarousel slide widget_testimonials block" id="carousel-testimonials">
+          <a data-slide="prev" href="#carousel-testimonials" class="carousel-control left"></a>
+          <a data-slide="next" href="#carousel-testimonials" class="carousel-control right"></a>
+          <div class="carousel-inner">
+            <div class="item active">
+              <p class="carousel-introtext">
+                <span>Design to express,<br />not to impress.</span>
+              </p>
+              <p class="carousel-readmore">
+                John Tanedo
+              </p>
+            </div>
+            <div class="item">
+              <p class="carousel-introtext">
+                <span>Lorem ipsum dolor<br />sit amet consectetur.</span>
+              </p>
+              <p class="carousel-readmore">
+                Catrin Jhonson
+              </p>
+            </div>
+            
+          </div>
+        </div>
+
+
+      </div>
+  </div></div>
+</section>
+
+<section id="process" class="grey_section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+          <h2 class="block-header">Latest Projects</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur<br />adipisicing elit. Nam, itaque.</p>
+        </div>
+      </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img class="fullwidthimage" alt="Full width image" src="./example/latest1.jpg" />
+          </li>
+          <li>
+            <img class="fullwidthimage" alt="Full width image" src="./example/latest2.jpg" />
+          </li>
+          <li>
+            <img class="fullwidthimage" alt="Full width image" src="./example/latest3.jpg" />
+          </li>
+       </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+<section id="team" class="dark_section">
+  <div class="container"><div class="row">
+      <div class="col-sm-12 text-center">
+          <h2 class="block-header">Meet The Team</h2>
+          <p>
+            A proud group of individuals who came together in a<br />
+            perfect unity to present you with this
+          </p>
+      </div>
+  </div>
+  <div class="row">
+    <div class="block col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <img src="./example/team1.jpg" alt="team" />
+        <div class="caption">
+          <h4>James Dylan</h4>
+          <p>Creative Director</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repellat possimus laboriosam et.</p>
+        </div>
+        <p class="team-social">
+          <a class="socialico-facebook" href="#" title="Facebook">#</a>
+          <a class="socialico-twitter" href="#" title="Twitter">#</a>
+          <a class="socialico-dribble" href="#" title="LinkedIn">#</a>
+        </p>
+      </div>
+    </div>
+    <div class="block col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <img src="./example/team2.jpg" alt="team" />
+        <div class="caption">
+          <h4>Janet Doe</h4>
+          <p>Creative Director</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repellat possimus laboriosam et.</p>
+        </div>
+        <p class="team-social">
+          <a class="socialico-facebook" href="#" title="Facebook">#</a>
+          <a class="socialico-flickr" href="#" title="Twitter">#</a>
+          <a class="socialico-linkedin" href="#" title="LinkedIn">#</a>
+        </p>
+      </div>
+    </div>
+    <div class="block col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <img src="./example/team3.jpg" alt="team" />
+        <div class="caption">
+          <h4>Joe Smith</h4>
+          <p>Creative Director</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repellat possimus laboriosam et.</p>
+        </div>
+        <p class="team-social">
+          <a class="socialico-twitter" href="#" title="Twitter">#</a>
+          <a class="socialico-facebook" href="#" title="Facebook">#</a>
+          <a class="socialico-google" href="#" title="LinkedIn">#</a>
+        </p>
+      </div>
+    </div>
+    <div class="block col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <img src="./example/team4.jpg" alt="team" />
+        <div class="caption">
+          <h4>Johanna Smith </h4>
+          <p>Creative Director</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repellat possimus laboriosam et.</p>
+        </div>
+        <p class="team-social">
+          <a class="socialico-twitter" href="#" title="Twitter">#</a>
+          <a class="socialico-facebook" href="#" title="Facebook">#</a>
+          <a class="socialico-linkedin" href="#" title="LinkedIn">#</a>
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+</section>
+
+
+<section id="progress" class="color_section bg-color3">
+  <div class="container">
+    <div class="row">
+    <div class="block col-sm-3">
+      <div class="arctcle">
+        <div class="single_teaser icons style2">
+          <div class="icons_introimg image-icon">
+            <i class="rt-icon-user3"></i>
+          </div>
+          <h2>2500</h2>
+          <h3>Happy Clients</h3>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="block col-sm-3">
+      <div class="arctcle">
+        <div class="single_teaser icons style2">
+          <div class="icons_introimg image-icon">
+            <i class="rt-icon-bulb"></i>
+          </div>
+          <h2>650</h2>
+          <h3>Projects made</h3>
+          
+        </div>
+      </div>
+    </div>
+    <div class="block col-sm-3">
+      <div class="arctcle">
+        <div class="single_teaser icons style2">
+          <div class="icons_introimg image-icon">
+            <i class="rt-icon-paperplane"></i>
+          </div>
+          <h2>5780</h2>
+          <h3>Letters Sent</h3>
+          
+        </div>
+      </div>
+    </div>
+    <div class="block col-sm-3">
+      <div class="arctcle">
+        <div class="single_teaser icons style2">
+          <div class="icons_introimg image-icon">
+            <i class="rt-icon-pen2"></i>
+          </div>
+          <h2>3400</h2>
+          <h3>Briefs Wrote</h3>
+          
+        </div>
+      </div>
+    </div>
+  </div></div>
+</section>
+
+
+
+<section id="portfolio" class="grey_section">
+    <div class="container"><div class="row">
+      <div class="col-sm-12 text-center">
+          <h2 class="block-header">Our Portfolio</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur<br />adipisicing elit. Nam, itaque.</p>
+      </div>
+  </div></div>
+<div id="portfolio_wrapper">
+    <div class="text-center filters">
+      <ul id="filtrable">
+        <li><a class="selected" data-filter="*" href="#">All</a></li>
+        <li><a data-filter=".graphicdesign" href="#" class="">Graphic Design</a></li>
+        <li><a data-filter=".photography" href="#" class="">Photography</a></li>
+        <li><a data-filter=".webdesign" href="#" class="">Web Design</a></li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+      <!-- Items -->
+      
+      <ul class="items-row cols-3 portfolio filtrable clearfix isotope" id="portfolioContainer">
+        <li class="item isotope-item graphicdesign webdesign"> 
+          
+          <!-- Image  --> 
+          
+          <div class="portfolio_item_image">
+            <img alt="" src="./example/intro_img1.jpg" />
+            <div class="portfolio_links">
+              <a class="p-view prettyPhoto" title="" rel="prettyPhoto[pp_gal]" href="./example/intro_img1.jpg"></a>
+              <span class="heart">19</span>
+              <a class="p-link" title="" href="./gallery-single.html"></a>
+            </div>
+          </div>
+          <div class="item_title">
+            <h4>
+              <a href="./gallery-single.html">Stet clita gubergren</a>
+            </h4>
+          </div>
+        </li>
+        
+        <li class="item isotope-item photography webdesign"> 
+          
+          <!-- Image  --> 
+          
+          <div class="portfolio_item_image">
+            <img alt="" src="./example/intro_img2.jpg" />
+            <div class="portfolio_links">  
+              <a class="p-view prettyPhoto" title="" rel="prettyPhoto[pp_gal]" href="./example/intro_img2.jpg"></a>
+              <span class="heart">19</span>
+              <a class="p-link" title="" href="./gallery-single.html"></a>
+            </div>
+          </div>
+          <div class="item_title">
+            <h4>
+              <a href="./gallery-single.html">Stet clita gubergren</a>
+            </h4>
+          </div>     
+        </li>
+        
+        <li class="item isotope-item photography webdesign"> 
+          
+          <!-- Image  --> 
+          
+          <div class="portfolio_item_image">
+            <img alt="" src="./example/intro_img3.jpg" />
+            <div class="portfolio_links">  
+              <a class="p-view prettyPhoto" title="" rel="prettyPhoto[pp_gal]" href="./example/intro_img3.jpg"></a>
+              <span class="heart">19</span>
+              <a class="p-link" title="" href="./gallery-single.html"></a>
+            </div>
+          </div>
+          <div class="item_title">
+            <h4>
+              <a href="./gallery-single.html">Stet clita gubergren</a>
+            </h4>
+          </div>
+        </li>
+        
+        <li class="item isotope-item"> 
+          
+          <!-- Image  --> 
+          
+          <div class="portfolio_item_image">
+            <img alt="" src="./example/intro_img4.jpg" />
+            <div class="portfolio_links">  
+              <a class="p-view prettyPhoto" title="" rel="prettyPhoto[pp_gal]" href="./example/intro_img4.jpg"></a>
+              <span class="heart">19</span>
+              <a class="p-link" title="" href="./gallery-single.html"></a>
+            </div>
+          </div>
+          <div class="item_title">
+            <h4>
+              <a href="./gallery-single.html">Stet clita gubergren</a>
+            </h4>
+          </div>               
+        </li>
+        
+        <li class="item isotope-item graphicdesign webdesign"> 
+          
+          <!-- Image  --> 
+          
+          <div class="portfolio_item_image">
+            <img alt="" src="./example/intro_img5.jpg" />
+            <div class="portfolio_links">  
+              <a class="p-view prettyPhoto" title="" rel="prettyPhoto[pp_gal]" href="./example/intro_img5.jpg"></a>
+              <span class="heart">19</span>
+              <a class="p-link" title="" href="./gallery-single.html"></a>
+            </div>
+          </div>
+          <div class="item_title">
+            <h4>
+              <a href="./gallery-single.html">Stet clita gubergren</a>
+            </h4>
+          </div>               
+        </li>
+        
+        <li class="item isotope-item"> 
+          
+          <!-- Image  --> 
+          
+          <div class="portfolio_item_image">
+            <img alt="" src="./example/intro_img6.jpg" />
+            <div class="portfolio_links">  
+              <a class="p-view prettyPhoto" title="" rel="prettyPhoto[pp_gal]" href="./example/intro_img6.jpg"></a>
+              <span class="heart">19</span>
+              <a class="p-link" title="" href="./gallery-single.html"></a>
+            </div>
+          </div>
+          <div class="item_title">
+            <h4>
+              <a href="./gallery-single.html">Stet clita gubergren</a>
+            </h4>
+          </div>          
+        </li>
+        
+        <li class="item isotope-item photography webdesign"> 
+          
+          <!-- Image  --> 
+          
+          <div class="portfolio_item_image">
+            <img alt="" src="./example/intro_img7.jpg" />
+            <div class="portfolio_links">  
+              <a class="p-view prettyPhoto" title="" rel="prettyPhoto[pp_gal]" href="./example/intro_img7.jpg"></a>
+              <span class="heart">19</span>
+              <a class="p-link" title="" href="./gallery-single.html"></a>
+            </div>
+          </div>
+          <div class="item_title">
+            <h4>
+              <a href="./gallery-single.html">Stet clita gubergren</a>
+            </h4>
+          </div>               
+        </li>
+        
+        <li class="item isotope-item graphicdesign webdesign"> 
+          
+          <!-- Image  --> 
+          
+          <div class="portfolio_item_image">
+            <img alt="" src="./example/intro_img8.jpg" />
+            <div class="portfolio_links">  
+              <a class="p-view prettyPhoto" title="" rel="prettyPhoto[pp_gal]" href="./example/intro_img8.jpg"></a>
+              <span class="heart">19</span>
+              <a class="p-link" title="" href="./gallery-single.html"></a>
+            </div>
+          </div>
+          <div class="item_title">
+            <h4>
+              <a href="./gallery-single.html">Stet clita gubergren</a>
+            </h4>
+          </div>               
+        </li>      
+  
+      </ul>
+    </div> <!--eof portfolio_wrapper-->
+      <div class="container">
+            <div class="row">
+          <div class="col-sm-12"><p class="text-center loadmore"><a href="./gallery.html" class="theme_btn inverse">View More</a></p></div>  
+        </div></div>
+</section>
+
+
+
+<section id="belowcontent" class="dark_section"><div class="container">
+ <div class="row">
+      <div class="col-sm-12 text-center">
+          <h2 class="block-header">Our Blog</h2>
+          <p>Latest from our blog, nam liber tempor cum soluta nobis<br />eleifend option congue nihil.</p>
+      </div>
+  </div>
+  <div class="row widget_from_blog">
+    <div class="col-sm-6">
+      <article class="post format-standard primary_post">
+          <header class="entry-header">
+            <div class="entry-thumbnail">
+              <img src="./example/blog-primary.jpg" class="post-image" alt="" />
+            </div>
+          </header>
+          <!-- .entry-header -->
+          
+          <div class="entry-content">
+            <h2 class="entry-title">
+              <a href="./blog-single.html" rel="bookmark">Post With Image</a>
+            </h2>
+            <p class="date">
+              <span class="entry-date">Dec 6, 2013</span>
+            </p>
+            <p>At vero eos et accusam et justo duo dolores et ea rebum. Ut wisi enim adinim veniam.</p>
+            
+          </div>
+          <!-- .entry-content -->
+          <div class="entry-share">
+            <p class="text-center">
+              <a class="socialico-facebook" href="#" title="Facebook">#</a>
+              <a class="socialico-twitter" href="#" title="Twitter">#</a>
+              <a class="socialico-google" href="#" title="Google">#</a>
+            </p>
+          </div>
+          <!-- .entry-share -->
+        </article>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="row">
+        <article class="post format-video secondary_post clearfix">
+          <div class="col-sm-6">
+            <header class="entry-header">
+              <div class="entry-thumbnail">
+                <img src="./example/blog-secondary1.jpg" class="post-image" alt="" />
+                <a class="video-view prettyPhoto" title="" rel="prettyPhoto" href="http://www.youtube.com/watch?v=Vpg9yizPP_g"></a>
+
+              </div>
+             </header>
+          </div>
+          <div class="col-sm-6">
+            <div class="entry-content">
+              <h2 class="entry-title">
+                <a href="./blog-single.html" rel="bookmark">Post With Video</a>
+              </h2>
+              <p class="date">
+                <span class="entry-date">Dec 8, 2013</span>
+              </p>
+              <p>At vero eos et accusam et justo duo dolores et ea rebum. Ut wisi enim adinim veniam.</p>
+            </div>
+            <!-- .entry-content -->
+            <div class="entry-share">
+              <p class="text-center">
+                <a class="socialico-facebook" href="#" title="Facebook">#</a>
+                <a class="socialico-twitter" href="#" title="Twitter">#</a>
+                <a class="socialico-google" href="#" title="Google">#</a>
+              </p>
+            </div>
+            <!-- .entry-share -->
+          </div>
+          
+        </article>
+      </div>
+
+      <div class="row">
+        <article class="post format-gallery secondary_post clearfix">
+          <div class="col-sm-6">
+            <header class="entry-header">
+              <div class="entry-thumbnail">
+                <div id="carousel-generic" class="carousel slide">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-generic" data-slide-to="1" class=""></li>
+                    <li data-target="#carousel-generic" data-slide-to="2" class=""></li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="./example/blog-secondary2.jpg" alt="image" />
+                    </div>
+                    <div class="item">
+                      <img src="./example/blog-secondary3.jpg" alt="image" />
+                    </div>
+                    <div class="item">
+                      <img src="./example/blog-secondary4.jpg" alt="image" />
+                    </div>
+                  </div>
+
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#carousel-generic" data-slide="prev">
+                    <span class="icon-prev"></span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-generic" data-slide="next">
+                    <span class="icon-next"></span>
+                  </a>
+                </div>
+              </div>
+             </header>
+          </div>
+          <div class="col-sm-6">
+            <div class="entry-content">
+              <h2 class="entry-title">
+                <a href="./blog-single.html" rel="bookmark">Post With Image</a>
+              </h2>
+              <p class="date">
+                <span class="entry-date">August 8, 2013</span>
+              </p>            
+              <p>At vero eos et accusam et justo duo dolores et ea rebum. Ut wisi enim adinim veniam.</p>
+            </div>
+            <!-- .entry-content -->
+            <div class="entry-share">
+              <p class="text-center">
+                <a class="socialico-facebook" href="#" title="Facebook">#</a>
+                <a class="socialico-twitter" href="#" title="Twitter">#</a>
+                <a class="socialico-google" href="#" title="Google">#</a>
+              </p>
+            </div>
+            <!-- .entry-share -->
+          </div>
+  
+      </article>
+    </div><!--eof row-->
+  </div><!--eof col-sm6-->
+  </div>
+  <div class="row">
+    <div class="col-sm-12"><p class="text-center loadmore"><a href="./blog.html" class="theme_btn inverse">View All</a></p></div>  
+  </div>
+</div>
+</section>
+
+
+<section id="info" class="color_section bg-color1">
+  <div class="container"><div class="row">
+      <div class="col-sm-12 text-center">
+        <h5 class="contact-phone">+91 544 567 8943</h5>
+        <h2 class="contact-email"><span><a href="mailto:info@simpleflex.com">info@simpleflex.com</a></span></h2>
+        <p class="contact-address">8605 Santa Monica Blvd, Los Angeles, California 97845, US</p>
+      </div>
+  </div></div>
+</section>
+
+<section id="map_wrap">
+  <div id="map"></div> 
+</section>
+
+<section id="contact" class="dark_section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h2 class="block-header">Get In Touch</h2>
+        <p>Feel free to contact us at any time, nam liber tempor cum<br />soluta nobis eleifend option congue nihil.</p>
+        <p id="social" class="text-center">
+          <a class="socialico-facebook" href="#" title="Facebook">#</a>
+          <a class="socialico-twitter" href="#" title="Twitter">#</a>
+          <a class="socialico-flickr" href="#" title="Flickr">#</a>
+          <a class="socialico-google" href="#" title="Google">#</a>
+          <a class="socialico-linkedin" href="#" title="Lindedin">#</a>
+          <a class="socialico-dribble" href="#" title="Dribble">#</a>
+          <a class="socialico-skype" href="#" title="skype">#</a>
+        </p>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="contact-form">
+          <form class="contact-form" method="post" action="/" />
+            <p class="contact-form-name">
+              <label for="name">Name <span class="required">*</span></label>
+              <input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control" placeholder="Name" />
+            </p>
+            <p class="contact-form-email">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control" placeholder="Email" />
+            </p>
+            <p class="contact-form-message">
+              <label for="message">Comment</label>
+              <textarea aria-required="true" rows="8" cols="45" name="message" id="message" class="form-control" placeholder="Message"></textarea>
+            </p>
+            <p class="contact-form-submit text-center vertical-margin-60">
+              <input type="submit" value="Send" id="contact_form_submit" name="contact_submit" class="theme_btn inverse" />
+            </p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+ <footer id="footer" class="bg-color0">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 block widget_text">
+        <h3>Text Widget</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, dolorem, eaque fugit odit obcaecati temporibus est dolor consequatur totam nam facilis soluta maiores eius iste veritatis. Ratione quidem exercitationem quisquam.</p>
+      </div>
+
+
+    <div class="block col-sm-3">
+      <div class="block widget_news">
+        <h3>Popular Posts</h3>
+        <ul>
+            <li class="item">
+              <span class="news_introimg">
+                <a href="#">
+                  <img alt="" src="./example/recent_post1.jpg" />
+                </a>
+              </span>
+              <div class="news_right">
+                <h5> 
+                  <a href="#">At vero eos et accusam et justo duo dolores.</a>
+                </h5>
+                <span class="news-date">Dec 24, 2013</span>
+              </div>
+            </li>
+
+            <li class="item">
+              <span class="news_introimg">
+                <a href="#">
+                  <img alt="" src="./example/recent_post2.jpg" />
+                </a>
+              </span>
+              <div class="news_right">
+                <h5> 
+                  <a href="#">Sanctus sea sed takimata ut voluptua.</a>
+                </h5>
+                <span class="news-date">Dec 14, 2013</span>
+              </div>
+            </li>
+          </ul>
+      </div>
+    </div>
+
+
+    <div class="block col-sm-3 subscribe">
+      <h3>Newsletter Subscribe</h3>
+      <p>Please, subscribe to our latest news to be updated.</p>
+      <form id="signup" action="/" method="get" class="form-inline" />
+        <div class="form-group">
+          <input name="email" id="mailchimp_email" type="email" class="form-control" placeholder="your@email.com" />
+        </div>
+        <button type="submit" class="theme_btn">Send</button>
+        <div id="response"></div>
+      </form>
+    </div>
+
+
+    <div class="block col-sm-3">
+      <h3>Flickr Widget</h3>
+      <ul id="flickr"></ul>
+    </div>
+
+
+    </div>
+  </div>
+</footer>  
+
+<section id="copyright" class="dark_section">
+  <div class="container"><div class="row">
+    
+    <div class="col-sm-12"><p class="text-center">&copy; Copyright 2014. Simpleflex Template by <a href="http://modernwebtemplates.com" target="_blank">MW Templates</a></p></div>
+
+  </div></div>
+</section>
+
+<div class="preloader">
+  <div class="preloaderimg"></div>
+</div>
+
+  
+        <script src="./js/vendor/respond.min.js"></script>
+        <script src="./js/vendor/placeholders.min.js"></script>
+        <script src="./js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="./js/vendor/bootstrap.min.js"></script>
+        <script src="./js/vendor/hoverIntent.js"></script>
+        <script src="./js/vendor/superfish.js"></script>
+        <script src="./js/vendor/jquery.actual.min.js"></script>
+        <script src="./js/vendor/jquery.elastislide.js"></script>
+        <script src="./js/vendor/jquery.flexslider-min.js"></script>
+        <script src="./js/vendor/jquery.prettyPhoto.js"></script>
+        <script src="./js/vendor/jquery.easing.1.3.js"></script>
+        <script src="./js/vendor/jquery.ui.totop.js"></script>
+        <script src="./js/vendor/jquery.isotope.min.js"></script>
+        <script src="./js/vendor/jquery.easypiechart.min.js"></script>
+        <script src='./js/vendor/jflickrfeed.min.js'></script>
+        <script src="./js/vendor/jquery.sticky.js"></script>
+        <script src='./js/vendor/jquery.scrollTo-min.js'></script>
+        <script src='./js/vendor/jquery.localscroll-min.js'></script>
+        <script src='./twitter/jquery.tweet.min.js'></script>
+        <script src="./js/plugins.js"></script>
+        <script src="./js/main.js"></script>
+
+         <!-- Map Scripts -->
+
+        <script type="text/javascript" src="../maps.googleapis.com/maps/api/js_114e8722.js"></script>
+        <script type="text/javascript">
+          var lat;
+          var lng;
+          var map;
+
+          //type your address after "address="
+          jQuery.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address=london, baker street, 221b&sensor=false', function(data) {
+                lat = data.results[0].geometry.location.lat;
+                lng = data.results[0].geometry.location.lng;
+              }).complete(function(){
+                dxmapLoadMap();
+              });
+
+          function attachSecretMessage(marker, message)
+          {
+            var infowindow = new google.maps.InfoWindow(
+              { content: message
+              });
+            google.maps.event.addListener(marker, 'click', function() {
+              infowindow.open(map,marker);
+            });
+          }
+
+          window.dxmapLoadMap = function()
+          {
+            var center = new google.maps.LatLng(lat, lng);
+            var settings = {
+              mapTypeId: google.maps.MapTypeId.ROADMAP,
+              zoom: 16,
+              draggable: false,
+              scrollwheel: false,
+              center: center
+            };
+            map = new google.maps.Map(document.getElementById('map'), settings);
+
+            var marker = new google.maps.Marker({
+              position: center,
+              title: 'Map title',
+              map: map
+            });
+            marker.setTitle('Map title'.toString());
+            //type your map title and description here
+            attachSecretMessage(marker, '<h3>Map title</h3>Map HTML description');
+          }
+        </script>
+        
+       
+    </body>
 </html>

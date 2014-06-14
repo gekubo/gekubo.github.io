@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> </html><![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> </html><![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> </html><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        
+        <title>Gallery Single Item</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="./css/bootstrap.css" />
+        <link rel="stylesheet" href="./css/animations.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <script src="./js/vendor/modernizr-2.6.2.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+<section id="header" class="bg-color0">
+    <div class="container"><div class="row">
+
+      <a class="navbar-brand" href="./index.html"><img src="./example/logo.png" alt="" /></a>
+
+      <div class="col-sm-12 mainmenu_wrap"><div class="main-menu-icon visible-xs"><span></span><span></span><span></span></div>
+        <ul id="mainmenu" class="nav menu sf-menu responsive-menu superfish">
+          <li class="">
+            <a href="./index.html#features">About</a>
+          </li>
+          <li class="">
+            <a href="./index.html#portfolio">Portfolio</a>
+          </li>
+          <li class="">
+            <a href="./index.html#belowcontent">Blog</a>
+          </li>
+          <li class="">
+            <a href="./index.html#info">Contact</a>
+          </li>
+          
+          <li class="dropdown">
+            <a href="./about.html">Pages</a>
+            <ul class="nav dropdown-menu">
+              <li class="">
+                <a href="./about.html">About</a>
+              </li>
+              <li class="">
+                <a href="./gallery-single.html">Gallery Item</a>
+              </li>
+              <li class="">
+                <a href="./blog.html">Blog</a>
+              </li>
+              <li class="">
+                <a href="./blog-single.html">Blog Post</a>
+              </li>
+              <li class="">
+                <a href="./404.html">404</a>
+              </li>
+              <li class="">
+                <a href="./contact.html">Contact</a>
+              </li>
+              <li class="">
+                <a href="./shortcodes.html">Shortcodes</a>
+              </li>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+      
+    </div></div>
+</section>
+
+<!--
+<section id="abovecontent" class="grey_section">
+  <div class="container"><div class="row">
+      <div class="block col-sm-12">
+        <ul class="breadcrumb">
+          <li><a href="#" class="pathway">Home</a></li>
+          <li><span>Gallery Item</span></li>
+        </ul>
+      </div>
+  </div></div>
+</section>
+-->
+
+<section id="middle" class="color_section bg-color3"><div class="container"><div class="row gallery-single">
+  <div class="col-sm-12">
+    <h2 class="block-header"><strong class="grey">Latest</strong> Project</h2>
+  </div>
+  <div class="col-sm-8">
+    <div id="carousel-generic" class="carousel slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="./example/slider1.jpg" alt="image" />
+        </div>
+        <div class="item">
+          <img src="./example/slider2.jpg" alt="image" />
+        </div>
+        <div class="item">
+          <img src="./example/slider3.jpg" alt="image" />
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-generic" data-slide="prev">
+        <span class="icon-prev"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-generic" data-slide="next">
+        <span class="icon-next"></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="col-sm-4 block">
+    <h4 class="grey">Project Details</h4>
+    <p class="description">
+      At vero eos et accusam et justo duo dolores et ea rebum. Ut wisi enim adinim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+    </p>
+    <p class="skills"><span>Skills:</span> Photography, Photoshop, Illustration</p>
+    <p class="client"><span>Client:</span> <a href="#">Simplex</a></p>
+    <p class="location"><span>Location:</span> <a href="#">www.simplex.com</a></p>
+    <p class="view-project"><a href="#" class="theme_btn">View Project</a></p>
+  </div>
+</div></div></section>
+
+
+<section id="portfolio" class="grey_section">
+    <div class="container"><div class="row">
+      <div class="col-sm-12 text-center">
+          <h2 class="block-header">Our Portfolio</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur<br />adipisicing elit. Nam, itaque.</p>
+      </div>
+  </div></div>
+<div id="portfolio_wrapper">
+    <div class="text-center filters">
+      <ul id="filtrable">
+        <li><a class="selected" data-filter="*" href="#">All</a></li>
+        <li><a data-filter=".graphicdesign" href="#" class="">Graphic Design</a></li>
+        <li><a data-filter=".photography" href="#" class="">Photography</a></li>
+        <li><a data-filter=".webdesign" href="#" class="">Web Design</a></li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+      <!-- Items -->
+      
+      <ul class="items-row cols-3 portfolio filtrable clearfix isotope" id="portfolioContainer">
+        <li class="item isotope-item graphicdesign webdesign"> 
+          
+          <!-- Image  --> 
+          
+          <div class="portfolio_item_image">
+            <img alt="" src="./example/intro_img1.jpg" />
+            <div class="portfolio_links">
+              <a class="p-view prettyPhoto" title="" rel="prettyPhoto[pp_gal]" href="./example/intro_img1.jpg"></a>
+              <span class="heart">19</span>
+              <a class="p-link" title="" href="./gallery-single.html"></a>
+            </div>
+          </div>
+          <div class="item_title">
+            <h4>
+              <a href="./gallery-single.html">Stet clita gubergren</a>
+            </h4>
+          </div>
+        </li>
+        
+        <li class="item isotope-item photography webdesign"> 
+          
+          <!-- Image  --> 
+          
+          <div class="portfolio_item_image">
+            <img alt="" src="./example/intro_img2.jpg" />
+            <div class="portfolio_links">  
+              <a class="p-view prettyPhoto" title="" rel="prettyPhoto[pp_gal]" href="./example/intro_img2.jpg"></a>
+              <span class="heart">19</span>
+              <a class="p-link" title="" href="./gallery-single.html"></a>
+            </div>
+          </div>
+          <div class="item_title">
+            <h4>
+              <a href="./gallery-single.html">Stet clita gubergren</a>
+            </h4>
+          </div>     
+        </li>
+        
+        <li class="item isotope-item photography webdesign"> 
+          
+          <!-- Image  --> 
+          
+          <div class="portfolio_item_image">
+            <img alt="" src="./example/intro_img3.jpg" />
+            <div class="portfolio_links">  
+              <a class="p-view prettyPhoto" title="" rel="prettyPhoto[pp_gal]" href="./example/intro_img3.jpg"></a>
+              <span class="heart">19</span>
+              <a class="p-link" title="" href="./gallery-single.html"></a>
+            </div>
+          </div>
+          <div class="item_title">
+            <h4>
+              <a href="./gallery-single.html">Stet clita gubergren</a>
+            </h4>
+          </div>
+        </li>
+        
+        <li class="item isotope-item"> 
+          
+          <!-- Image  --> 
+          
+          <div class="portfolio_item_image">
+            <img alt="" src="./example/intro_img4.jpg" />
+            <div class="portfolio_links">  
+              <a class="p-view prettyPhoto" title="" rel="prettyPhoto[pp_gal]" href="./example/intro_img4.jpg"></a>
+              <span class="heart">19</span>
+              <a class="p-link" title="" href="./gallery-single.html"></a>
+            </div>
+          </div>
+          <div class="item_title">
+            <h4>
+              <a href="./gallery-single.html">Stet clita gubergren</a>
+            </h4>
+          </div>               
+        </li>
+        
+        <li class="item isotope-item graphicdesign webdesign"> 
+          
+          <!-- Image  --> 
+          
+          <div class="portfolio_item_image">
+            <img alt="" src="./example/intro_img5.jpg" />
+            <div class="portfolio_links">  
+              <a class="p-view prettyPhoto" title="" rel="prettyPhoto[pp_gal]" href="./example/intro_img5.jpg"></a>
+              <span class="heart">19</span>
+              <a class="p-link" title="" href="./gallery-single.html"></a>
+            </div>
+          </div>
+          <div class="item_title">
+            <h4>
+              <a href="./gallery-single.html">Stet clita gubergren</a>
+            </h4>
+          </div>               
+        </li>
+        
+        <li class="item isotope-item"> 
+          
+          <!-- Image  --> 
+          
+          <div class="portfolio_item_image">
+            <img alt="" src="./example/intro_img6.jpg" />
+            <div class="portfolio_links">  
+              <a class="p-view prettyPhoto" title="" rel="prettyPhoto[pp_gal]" href="./example/intro_img6.jpg"></a>
+              <span class="heart">19</span>
+              <a class="p-link" title="" href="./gallery-single.html"></a>
+            </div>
+          </div>
+          <div class="item_title">
+            <h4>
+              <a href="./gallery-single.html">Stet clita gubergren</a>
+            </h4>
+          </div>          
+        </li>
+        
+        <li class="item isotope-item photography webdesign"> 
+          
+          <!-- Image  --> 
+          
+          <div class="portfolio_item_image">
+            <img alt="" src="./example/intro_img7.jpg" />
+            <div class="portfolio_links">  
+              <a class="p-view prettyPhoto" title="" rel="prettyPhoto[pp_gal]" href="./example/intro_img7.jpg"></a>
+              <span class="heart">19</span>
+              <a class="p-link" title="" href="./gallery-single.html"></a>
+            </div>
+          </div>
+          <div class="item_title">
+            <h4>
+              <a href="./gallery-single.html">Stet clita gubergren</a>
+            </h4>
+          </div>               
+        </li>
+        
+        <li class="item isotope-item graphicdesign webdesign"> 
+          
+          <!-- Image  --> 
+          
+          <div class="portfolio_item_image">
+            <img alt="" src="./example/intro_img8.jpg" />
+            <div class="portfolio_links">  
+              <a class="p-view prettyPhoto" title="" rel="prettyPhoto[pp_gal]" href="./example/intro_img8.jpg"></a>
+              <span class="heart">19</span>
+              <a class="p-link" title="" href="./gallery-single.html"></a>
+            </div>
+          </div>
+          <div class="item_title">
+            <h4>
+              <a href="./gallery-single.html">Stet clita gubergren</a>
+            </h4>
+          </div>               
+        </li>      
+  
+      </ul>
+    </div> <!--eof portfolio_wrapper-->
+      <div class="container">
+            <div class="row">
+          <div class="col-sm-12"><p class="text-center loadmore"><a href="#" class="theme_btn inverse">Load More</a></p></div>  
+        </div></div>
+</section>
+
+<footer id="footer" class="bg-color0">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 block widget_text">
+        <h3>Text Widget</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, dolorem, eaque fugit odit obcaecati temporibus est dolor consequatur totam nam facilis soluta maiores eius iste veritatis. Ratione quidem exercitationem quisquam.</p>
+      </div>
+
+
+    <div class="block col-sm-3">
+      <div class="block widget_news">
+        <h3>Popular Posts</h3>
+        <ul>
+            <li class="item">
+              <span class="news_introimg">
+                <a href="#">
+                  <img alt="" src="./example/recent_post1.jpg" />
+                </a>
+              </span>
+              <div class="news_right">
+                <h5> 
+                  <a href="#">At vero eos et accusam et justo duo dolores.</a>
+                </h5>
+                <span class="news-date">Dec 24, 2013</span>
+              </div>
+            </li>
+
+            <li class="item">
+              <span class="news_introimg">
+                <a href="#">
+                  <img alt="" src="./example/recent_post2.jpg" />
+                </a>
+              </span>
+              <div class="news_right">
+                <h5> 
+                  <a href="#">Sanctus sea sed takimata ut voluptua.</a>
+                </h5>
+                <span class="news-date">Dec 14, 2013</span>
+              </div>
+            </li>
+          </ul>
+      </div>
+    </div>
+
+
+    <div class="block col-sm-3 subscribe">
+      <h3>Newsletter Subscribe</h3>
+      <p>Please, subscribe to our latest news to be updated.</p>
+      <form id="signup" action="/" method="get" class="form-inline" />
+        <div class="form-group">
+          <input name="email" id="mailchimp_email" type="email" class="form-control" placeholder="your@email.com" />
+        </div>
+        <button type="submit" class="theme_btn">Send</button>
+        <div id="response"></div>
+      </form>
+    </div>
+
+
+    <div class="block col-sm-3">
+      <h3>Flickr Widget</h3>
+      <ul id="flickr"></ul>
+    </div>
+
+
+    </div>
+  </div>
+</footer>  
+
+<section id="copyright" class="dark_section">
+  <div class="container"><div class="row">
+    
+    <div class="col-sm-12"><p class="text-center">&copy; Copyright 2014. Simpleflex Template by <a href="http://modernwebtemplates.com" target="_blank">MW Templates</a></p></div>
+
+  </div></div>
+</section>
+
+<div class="preloader">
+  <div class="preloaderimg"></div>
+</div>
+
+  
+        <script src="./js/vendor/respond.min.js"></script>
+        <script src="./js/vendor/placeholders.min.js"></script>
+        <script src="./js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="./js/vendor/bootstrap.min.js"></script>
+        <script src="./js/vendor/hoverIntent.js"></script>
+        <script src="./js/vendor/superfish.js"></script>
+        <script src="./js/vendor/jquery.actual.min.js"></script>
+        <script src="./js/vendor/jquery.elastislide.js"></script>
+        <script src="./js/vendor/jquery.flexslider-min.js"></script>
+        <script src="./js/vendor/jquery.prettyPhoto.js"></script>
+        <script src="./js/vendor/jquery.easing.1.3.js"></script>
+        <script src="./js/vendor/jquery.ui.totop.js"></script>
+        <script src="./js/vendor/jquery.isotope.min.js"></script>
+        <script src="./js/vendor/jquery.easypiechart.min.js"></script>
+        <script src='./js/vendor/jflickrfeed.min.js'></script>
+        <script src="./js/vendor/jquery.sticky.js"></script>
+        <script src='./js/vendor/jquery.scrollTo-min.js'></script>
+        <script src='./js/vendor/jquery.localscroll-min.js'></script>
+        <script src='./twitter/jquery.tweet.min.js'></script>
+        <script src="./js/plugins.js"></script>
+        <script src="./js/main.js"></script>
+
+    </body>
+</html>
