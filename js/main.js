@@ -79,20 +79,6 @@ jQuery(document).ready(function() {
 		}
 	);
 
-
-	//twitter
-	if (jQuery().tweet) {
-		jQuery('.twitter').tweet({
-			modpath: "./twitter/",
-		    count: 3,
-		    avatar_size: 48,
-		    loading_text: 'loading twitter feed...',
-		    join_text: 'auto',
-		    username: 'ThemeForest', 
-		    template: "{avatar}{time}{join}<span class=\"tweet_text\">{tweet_text}</span>"
-		});
-	}
-
 });
 
 jQuery(window).load(function(){
@@ -105,7 +91,7 @@ jQuery(window).load(function(){
 	if (jQuery().sticky) {
 	    jQuery("#header").sticky({ 
 	    		topSpacing: 0,
-	    		scrollBeforeStick: 150
+	    		scrollBeforeStick: 10
 	    	},
 	    	function(){ 
 	    		jQuery("#header").stop().animate({opacity:0}, 0).delay(500).stop().animate({opacity:1}, 1000);
@@ -125,8 +111,8 @@ jQuery(window).load(function(){
 			controlNav: true,   
 			//animationLoop: false,
 			smoothHeight: true,
-			slideshowSpeed:5000,
-			animationSpeed:800,
+			slideshowSpeed:9000,
+			animationSpeed:500,
 			after :function( slider ){
 			  	//bg-color1 - class for #mainslider
 			  	var currentClass = $mainSlider.find('.flex-active-slide').attr('data-bg');
@@ -143,28 +129,6 @@ jQuery(window).load(function(){
 	jQuery(".preloader").delay(200).fadeOut("slow").delay(200, function(){
 		jQuery(this).remove();
 	});
-
-
-	//flickr
-	if (jQuery().jflickrfeed) {
-		jQuery("#flickr").jflickrfeed({
-			flickrbase: "http://api.flickr.com/services/feeds/",
-			limit: 6,
-			qstrings: {
-				id: "54297118@N03"
-			},
-			itemTemplate: '<a href="{{image_b}}" rel="prettyPhoto[pp_gal]"><li><img alt="{{title}}" src="{{image_s}}" /></li></a>'
-		}, function(data) {
-			jQuery("#flickr a").prettyPhoto({
-				theme: 'facebook'
-	   		});
-	   		jQuery("#flickr li").hover(function () {						 
-			   jQuery(this).find("img").stop().animate({ opacity: 0.5 }, 200);
-		    }, function() {
-			   jQuery(this).find("img").stop().animate({ opacity: 1.0 }, 400);
-		    });
-		});
-	}
 
 });
 
