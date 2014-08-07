@@ -179,7 +179,7 @@ jQuery(window).scroll(function() {
 	//circle progress bar
 	if (jQuery().easyPieChart) {
 		var count = 0 ;
-		var colors = ['#a8d164', '#fbcf61', '#ff6f6f'];
+		var colors = ['#fbcf61','#a8d164', '#a8d164', '#ff6f6f'];
 		jQuery('.chart').each(function(){
 
 				
