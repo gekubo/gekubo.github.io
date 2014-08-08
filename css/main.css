@@ -422,7 +422,7 @@ aside .block + .block {margin-top: 34px;}
 }
 @media (max-width: 767px) {
     .contact-phone {font-size: 30px;}
-    .contact-email span {font-size: 18px;padding: 11px 10px;}
+    .contact-email span {font-size: 14px;padding: 11px 10px;}
     .contact-address {font-size: 20px;}
     .subscribe .form-control {width:100%;}
     #footer .block > h3, #footer .subscribe {text-align: center;}
