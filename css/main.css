@@ -417,12 +417,12 @@ aside .block + .block {margin-top: 34px;}
 .widget_contact {position: absolute; z-index: 2; background-color: #ffffff; top:40px; padding: 20px 20px;
 }
 @media (max-width: 991px) {
-    .contact-email span {font-size: 40px;padding: 11px 40px;}
+    .contact-email span {font-size: 32px;padding: 11px 40px;}
     .widget_contact {position: static; margin: 40px 0;}
 }
 @media (max-width: 767px) {
     .contact-phone {font-size: 30px;}
-    .contact-email span {font-size: 20px;padding: 11px 10px;}
+    .contact-email span {font-size: 18px;padding: 11px 10px;}
     .contact-address {font-size: 20px;}
     .subscribe .form-control {width:100%;}
     #footer .block > h3, #footer .subscribe {text-align: center;}
@@ -2321,7 +2321,7 @@ font-size: 0px !important;
 display: inline-block;
 position: relative;
 padding-right: 38px;
-line-height: 36px;
+line-height: 30px;
 vertical-align: middle;
 }
 
@@ -2338,10 +2338,10 @@ top: -5px;
 left: 0;
 color:#ffffff;
 border-radius: 0;
-width: 36px;
-height: 36px;
+width: 30px;
+height: 30px;
 margin: 0 3px;
-line-height: 36px;
+line-height: 30px;
 -webkit-transition: all 0.2s linear 0s;
 -moz-transition: all 0.2s linear 0s;
 -o-transition: all 0.2s linear 0s;
