@@ -2343,13 +2343,15 @@ transition: all 0.1s linear 0s;
 
 a.socialico-academia:before {content: "\e757";}
 a.socialico-linkedin:before {content: "\e66c";}
-a.socialico-twitter:before {content: "\e65d";}
-a.socialico-facebook:before {content: "\e65a";}
-a.socialico-tumblr:before {content: "T";}
+a.socialico-xing:before {content: "\e638";}
 a.socialico-google:before {content: "\e666";}
-a.socialico-skype:before {content: "\e6dd";}
 a.socialico-github:before {content: "\e695";}
 a.socialico-behance:before {content: "\e67b";}
+a.socialico-facebook:before {content: "\e65a";}
+a.socialico-twitter:before {content: "\e65d";}
+a.socialico-skype:before {content: "\e6dd";}
+
+a.socialico-tumblr:before {content: "T";}
 a.socialico-flickr:before {content: "N";}
 a.socialico-deviantart:before {content: "\e674";}
 a.socialico-vimeo:before {content: "\e670";}
@@ -2366,13 +2368,15 @@ a.socialico-googlesq:before {content: "\e667";}
 /*colors for used social icons*/
 a.socialico-academia:before {color:#428799;}
 a.socialico-linkedin:before {color:#156BA1;}
-a.socialico-twitter:before {color:#1E9BE4;}
-a.socialico-facebook:before {color:#3b5998;}
+a.socialico-xing:before {color:#0B6463;}
 a.socialico-google:before {color:#D13630;}
 a.socialico-github:before {color:#5E1C70;}
 a.socialico-behance:before {color:#1A62F9;}
-a.socialico-flickr:before {color:#ff0084;}
+a.socialico-twitter:before {color:#1E9BE4;}
+a.socialico-facebook:before {color:#3b5998;}
 a.socialico-skype:before {color:#2BA7E6;}
+
+a.socialico-flickr:before {color:#ff0084;}
 
 a.socialico-websq:before {color: "#fefefe";}
 a.socialico-twittersq:before {color:#1E9BE4;}
