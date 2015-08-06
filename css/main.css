@@ -1940,6 +1940,7 @@ font-family: Arial, sans-serif;
 /*teaser icons*/
 @font-face {
 	font-family: 'captain-icon';
+	src:url('fonts/captain-icon.eot');
 	src:url('fonts/captain-icon.eot') format('embedded-opentype'),
 		url('fonts/captain-icon.woff') format('woff'),
 		url('fonts/captain-icon.ttf') format('truetype'),
