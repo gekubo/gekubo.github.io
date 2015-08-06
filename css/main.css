@@ -1940,11 +1940,11 @@ font-family: Arial, sans-serif;
 /*teaser icons*/
 @font-face {
 	font-family: 'captain-icon';
-	src:url('fonts/captain-icon.eot');
-	src:url('fonts/captain-icon.eot') format('embedded-opentype'),
-		url('fonts/captain-icon.woff') format('woff'),
-		url('fonts/captain-icon.ttf') format('truetype'),
-		url('fonts/captain-icon.svg') format('svg');
+	src:url('../fonts/captain-icon.eot?-1i2a56');
+	src:url('../fonts/captain-icon.eot?#iefix-1i2a56') format('embedded-opentype'),
+		url('../fonts/captain-icon.woff?-1i2a56') format('woff'),
+		url('../fonts/captain-icon.ttf?-1i2a56') format('truetype'),
+		url('../fonts/captain-icon.svg?-1i2a56#captain-icon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
