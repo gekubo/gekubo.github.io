@@ -384,7 +384,7 @@ ol.list3 li + li {border-top: 1px solid rgba(100,100,100,0.2);}
 .is-sticky #header {top: 0;}
 #header-sticky-wrapper { height: 100px !important; background-color: transparent;}
 #header .row {position: relative;}
-#header .navbar-brand{display: block; position: absolute; padding:24px 15px 18px; z-index: 10; background-color:#fefefe; top:0px; font-size: 40px;}
+#header .navbar-brand{display: block; position: absolute; padding:32px 15px 18px; z-index: 10; background-color:#fefefe; top:0px; font-size: 40px;}
 .is-sticky #header .navbar-brand{padding: 2px; max-width: 60px; }
 #header .navbar-brand img{display: inline-block; width: 120px;}
 @media screen and (max-width: 991px) {
