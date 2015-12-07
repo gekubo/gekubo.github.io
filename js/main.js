@@ -101,8 +101,7 @@ jQuery(window).load(function(){
 	    	}
 	    );
 	}
-
-
+	
 	if (jQuery().flexslider) {
 		var $mainSlider = jQuery('#mainslider');
 		jQuery(".flexslider").flexslider({

@@ -252,7 +252,6 @@ a:focus {
 iframe{border:none; max-width: 100%;}
 
 .theme_btn {
-
     font-weight: 700;
     background-color: transparent;
     text-transform: uppercase;
@@ -262,7 +261,6 @@ iframe{border:none; max-width: 100%;}
     border:4px solid #ff6f6f;
     border-radius: 0px;
     line-height: 1;
-
     -webkit-transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
@@ -353,7 +351,6 @@ ul.list2 li{position: relative; padding: 8px 0 8px;}
 ul.list2 li + li {border-top: 1px solid rgba(100,100,100,0.2);}
 ul.list2 li:before{ content: '\2022'; font-size: 30px; display: block; position: absolute; color:#fcfcfc; left:-20px;}
 ol.list3 {
-
     counter-reset: li;
     list-style: none outside none;
     margin-bottom: 4em;
@@ -856,7 +853,6 @@ html[xmlns] .slides {display: block;}
     background-color: transparent;
     font-size: 0;
     color: transparent;
-
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -o-transition: all .3s ease;
@@ -1016,7 +1012,6 @@ html[xmlns] .slides {display: block;}
     .imagedesc {font-size: 16px !important;}
 }
 
-
 /*totop*/
 #toTop {
     background: #ff7070;
@@ -1060,7 +1055,6 @@ transition: all 0.1s linear;
 #toTop:active, #toTop:focus {
 outline: medium none;
 }
-
 
 /*horizontal slider*/
 .horizontal_slider_list_wrapper {
@@ -1142,7 +1136,6 @@ content: '\e713';
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
 }
-
 
 .related_posts_item > h4 {padding:18px 0; margin:0; font-size: 18px; }
 .related_posts_item > h4 > a {color:#ff6f6f;}
@@ -3109,7 +3102,6 @@ color:#e5e5e5;
 transition: all 0.1s linear 0s;
 }
 
-
 a.socialico-academia:before {content: "\e757";}
 a.socialico-linkedin:before {content: "\e66c";}
 a.socialico-xing:before {content: "\e638";}
@@ -3119,7 +3111,6 @@ a.socialico-behance:before {content: "\e67b";}
 a.socialico-facebook:before {content: "\e65a";}
 a.socialico-twitter:before {content: "\e65d";}
 a.socialico-skype:before {content: "\e6dd";}
-
 a.socialico-tumblr:before {content: "T";}
 a.socialico-flickr:before {content: "N";}
 a.socialico-deviantart:before {content: "\e674";}
@@ -3127,7 +3118,6 @@ a.socialico-vimeo:before {content: "\e670";}
 a.socialico-youtube:before {content: "\e66f";}
 a.socialico-phone:before {content: "\e679";}
 a.socialico-paypal:before {content: "P";}
-
 a.socialico-websq:before {content: "\e661";}
 a.socialico-rsssq:before {content: "\e66a";}
 a.socialico-twittersq:before {content: "\e65e";}
@@ -3144,71 +3134,8 @@ a.socialico-behance:before {color:#1A62F9;}
 a.socialico-twitter:before {color:#1E9BE4;}
 a.socialico-facebook:before {color:#3b5998;}
 a.socialico-skype:before {color:#2BA7E6;}
-
 a.socialico-flickr:before {color:#ff0084;}
-
 a.socialico-websq:before {color: #ffa928;}
 a.socialico-twittersq:before {color:#1E9BE4;}
 a.socialico-facebooksq:before {color:#3b5998;}
 a.socialico-googlesq:before {color:#D13630;}
-
-/*prettyPhoto*/
-div.facebook .pp_expand{background:url(../img/prettyPhoto/facebook/sprite.png) -31px -26px no-repeat;cursor:pointer}
-div.facebook .pp_expand:hover{background:url(../img/prettyPhoto/facebook/sprite.png) -31px -47px no-repeat;cursor:pointer}
-div.facebook .pp_contract{background:url(../img/prettyPhoto/facebook/sprite.png) 0 -26px no-repeat;cursor:pointer}
-div.facebook .pp_contract:hover{background:url(../img/prettyPhoto/facebook/sprite.png) 0 -47px no-repeat;cursor:pointer}
-div.facebook .pp_close{width:22px;height:22px;background:url(../img/prettyPhoto/facebook/sprite.png) -1px -1px no-repeat;cursor:pointer}
-div.facebook .pp_description{margin:0 37px 0 0}
-div.facebook .pp_loaderIcon{background:url(../img/prettyPhoto/facebook/loader.gif) center center no-repeat}
-div.facebook .pp_arrow_previous{background:url(../img/prettyPhoto/facebook/sprite.png) 0 -71px no-repeat;height:22px;margin-top:0;width:22px}
-div.facebook .pp_arrow_previous.disabled{background-position:0 -96px;cursor:default}
-div.facebook .pp_arrow_next{background:url(../img/prettyPhoto/facebook/sprite.png) -32px -71px no-repeat;height:22px;margin-top:0;width:22px}
-div.facebook .pp_arrow_next.disabled{background-position:-32px -96px;cursor:default}
-div.facebook .pp_nav{margin-top:0}
-div.facebook .pp_nav p{font-size:15px;padding:0 3px 0 4px; margin-top: -2px;}
-div.facebook .pp_nav .pp_play{background:url(../img/prettyPhoto/facebook/sprite.png) -1px -123px no-repeat;height:22px;width:22px}
-div.facebook .pp_nav .pp_pause{background:url(../img/prettyPhoto/facebook/sprite.png) -32px -123px no-repeat;height:22px;width:22px}
-div.facebook .pp_next:hover{background:url(../img/prettyPhoto/facebook/btnNext.png) center right no-repeat;cursor:pointer}
-div.facebook .pp_previous:hover{background:url(../img/prettyPhoto/facebook/btnPrevious.png) center left no-repeat;cursor:pointer}
-div.pp_pic_holder a:focus{outline:none}
-div.pp_overlay{background:#000;display:none;left:0;position:absolute;top:0;width:100%;z-index:9500}
-div.pp_pic_holder{display:none;position:absolute;width:100px;z-index:10000}
-.pp_content{height:40px;min-width:40px; overflow: hidden;}
-* html .pp_content{width:40px}
-.pp_content_container{position:relative;text-align:left;width:100%}
-.pp_content_container .pp_left{padding-left:20px}
-.pp_content_container .pp_right{padding-right:20px}
-.pp_content_container .pp_details{float:left;/*margin:10px 0 2px;*/ padding:7px 10px; background-color: #fefefe;}
-.pp_description{display:none;margin:0}
-.pp_social{float:left;margin:0}
-.pp_social .facebook{float:left;margin-left:5px;width:55px;overflow:hidden}
-.pp_social .twitter{float:left}
-.pp_nav{clear:right;float:left;margin:3px 10px 0 0}
-.pp_nav p{float:left;white-space:nowrap;margin:2px 4px}
-.pp_nav .pp_play,.pp_nav .pp_pause{float:left;margin-right:4px;text-indent:-10000px}
-a.pp_arrow_previous,a.pp_arrow_next{display:block;float:left;height:15px;margin-top:3px;overflow:hidden;text-indent:-10000px;width:14px}
-.pp_hoverContainer{position:absolute;top:0;width:100%;z-index:2000}
-.pp_gallery{display:none;left:50%;margin-top:-50px;position:absolute;z-index:10000}
-.pp_gallery div{float:left;overflow:hidden;position:relative}
-.pp_gallery ul{float:left;height:35px;position:relative;white-space:nowrap;margin:0 0 0 5px;padding:0}
-.pp_gallery ul a{border:1px rgba(0,0,0,0.5) solid;display:block;float:left;height:33px;overflow:hidden}
-.pp_gallery ul a img{border:0}
-.pp_gallery li{display:block;float:left;margin:0 5px 0 0;padding:0}
-.pp_gallery li.default a{background:url(../img/prettyPhoto/facebook/default_thumbnail.gif) 0 0 no-repeat;display:block;height:33px;width:50px}
-.pp_gallery .pp_arrow_previous,.pp_gallery .pp_arrow_next{margin-top:7px!important}
-a.pp_next{background:url(../img/prettyPhoto/light_rounded/btnNext.png) 10000px 10000px no-repeat;display:block;float:right;height:100%;text-indent:-10000px;width:49%; -webkit-transition: none; -moz-transition: none; -o-transition: none; -ms-transition: none; transition: none;}
-a.pp_previous{background:url(../img/prettyPhoto/light_rounded/btnNext.png) 10000px 10000px no-repeat;display:block;float:left;height:100%;text-indent:-10000px;width:49%;-webkit-transition: none; -moz-transition: none; -o-transition: none; -ms-transition: none; transition: none;}
-a.pp_expand,a.pp_contract{cursor:pointer;display:none;height:20px;position:absolute;right:30px;text-indent:-10000px;top:10px;width:20px;z-index:20000}
-a.pp_close{position:absolute;right:30px;top:7px;display:block;line-height:22px;text-indent:-10000px}
-.pp_loaderIcon{display:block;height:24px;left:50%;position:absolute;top:50%;width:24px;margin:-12px 0 0 -12px}
-#pp_full_res{line-height:1!important}
-#pp_full_res .pp_inline{text-align:left}
-#pp_full_res .pp_inline p{margin:0 0 15px}
-div.ppt{color:#fefefe;display:none;font-size:17px;z-index:9999;margin:0 0 5px 15px}
-.pp_top,.pp_bottom{height:20px;position:relative}
-* html .pp_top,* html .pp_bottom{padding:0 20px}
-.pp_top .pp_left,.pp_bottom .pp_left{height:20px;left:0;position:absolute;width:20px}
-.pp_top .pp_middle,.pp_bottom .pp_middle{height:20px;left:20px;position:absolute;right:20px}
-* html .pp_top .pp_middle,* html .pp_bottom .pp_middle{left:0;position:static}
-.pp_top .pp_right,.pp_bottom .pp_right{height:20px;left:auto;position:absolute;right:0;top:0;width:20px}
-.pp_fade,.pp_gallery li.default a img{display:none}
