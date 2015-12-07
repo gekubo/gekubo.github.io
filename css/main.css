@@ -325,6 +325,8 @@ iframe{border:none; max-width: 100%;}
 .block-header {margin-bottom: 22px; margin-top: 0px;font-size: 60px; text-transform: uppercase;}
 @media (max-width: 767px) {
     .block-header {font-size: 40px;}
+    .not_found {font-size: 150px;}
+    .not_found + h1 {font-size: 25px;}
 }
 .block-header + p {font-size: 20px; position: relative; line-height: 30px; margin-bottom: 60px;}
 .text-center .block-header + p:after {display: block; position: absolute; content: ''; width: 170px; height: 1px; background-color: rgba(100,100,100,0.4); bottom: -32px; left: 50%; margin-left: -85px;}
