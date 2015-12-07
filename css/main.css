@@ -1906,13 +1906,13 @@ font-family: Arial, sans-serif;
  }
 
 .preloaderimg  {
-     width: 128px;
-     height: 128px;
+     width: 256px;
+     height: 256px;
      position: absolute;
      left: 50%;
      top: 50%;
      background: url(../img/preloader.gif) no-repeat 50% 50% transparent;
-     margin:-40px 0 0 -40px;
+     margin:-128px 0 0 -128px;
 }
 
 /*teaser icons*/
