@@ -82,33 +82,33 @@ jQuery(document).ready(function() {
 });
 
 jQuery(window).load(function(){
-	
+
 	setTimeout(function(){
 		jQuery('.progress-bar').addClass('stretchRight');
 	}, 600);
 
 	//stick header to top
 	if (jQuery().sticky) {
-	    jQuery("#header").sticky({ 
+	    jQuery("#header").sticky({
 	    		topSpacing: 0,
 	    		scrollBeforeStick: 10
 	    	},
-	    	function(){ 
+	    	function(){
 	    		jQuery("#header").stop().animate({opacity:0}, 0).delay(500).stop().animate({opacity:1}, 1000);
 	    	},
-	       	function(){ 
+	       	function(){
 	    		jQuery("#header").stop().animate({opacity:0}, 0).delay(50).stop().animate({opacity:1}, 2000);
 	    	}
 	    );
 	}
-	
+
 
 	if (jQuery().flexslider) {
 		var $mainSlider = jQuery('#mainslider');
 		jQuery(".flexslider").flexslider({
 			animation: "fade",
 			useCSS: true,
-			controlNav: true,   
+			controlNav: true,
 			//animationLoop: false,
 			smoothHeight: true,
 			slideshowSpeed:9000,
@@ -146,7 +146,7 @@ jQuery(window).scroll(function() {
 		var colors = ['#fbcf61','#a8d164', '#a8d164', '#ff6f6f'];
 		jQuery('.chart').each(function(){
 
-				
+
 			var imagePos = jQuery(this).offset().top;
 			var topOfWindow = jQuery(window).scrollTop();
 			if (imagePos < topOfWindow+600) {
@@ -171,5 +171,4 @@ jQuery(window).scroll(function() {
 			if (count >= colors.length) { count = 0};
 		});
 	}
-
 });
