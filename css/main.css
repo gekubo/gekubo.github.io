@@ -154,7 +154,6 @@ blockquote h3 {margin-top: 0; font-style: normal;}
     #mainslider [class*="col-"] + [class*="col-"] {margin-top:10px; margin-bottom: 10px;}
     #mainslider img {max-width: 100%; max-height: 350px; padding:20px 0 0;}
     #mainslider img.negative-margin-60 {margin-top: -20px !important;}
-    #header-sticky-wrapper + #middle > div {padding-top: 110px;}
 }
 
 /*main*/
