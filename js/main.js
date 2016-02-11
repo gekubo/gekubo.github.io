@@ -1,19 +1,5 @@
 "use strict";
 jQuery(document).ready(function() {
-	//menu
-	if (jQuery().superfish) {
-		jQuery('ul.sf-menu').superfish({
-			delay:       700,
-			animation:   {opacity:'show',height:'show'},
-			//animation:   {opacity:'show'},
-			animationOut: {opacity: 'hide'},
-			speed:       'fast',
-			disableHI:   false,
-			cssArrows:   false,
-			autoArrows:  true
-		});
-	}
-
 	//toTop
 	if (jQuery().UItoTop) {
         jQuery().UItoTop({ easingType: 'easeOutQuart' });
@@ -101,7 +87,7 @@ jQuery(window).load(function(){
 	    	}
 	    );
 	}
-	
+
 	if (jQuery().flexslider) {
 		var $mainSlider = jQuery('#mainslider');
 		jQuery(".flexslider").flexslider({
@@ -121,7 +107,6 @@ jQuery(window).load(function(){
 	}
 
 	jQuery('body').delay(1000).scrollspy('refresh');
-
 
 	//preloader
 	jQuery(".preloaderimg").fadeOut();

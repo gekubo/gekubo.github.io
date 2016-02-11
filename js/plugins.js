@@ -15,15 +15,15 @@ jQuery(document).ready(function() {
     var MainWindowWidth = jQuery(window).width();
     jQuery(window).resize(function(){
         MainWindowWidth = jQuery(window).width();
-    });        
+    });
     jQuery('.sf-menu ul li').mouseover(function(){
-        // checks if third level menu exist         
-        var subMenuExist = jQuery(this).find('.nav-child').length;            
+        // checks if third level menu exist
+        var subMenuExist = jQuery(this).find('.nav-child').length;
         if( subMenuExist > 0){
             var subMenuWidth = jQuery(this).find('.nav-child').width();
             var subMenuOffset = jQuery(this).find('.nav-child').parent().offset().left + subMenuWidth;
             // if sub menu is off screen, give new position
-            if((subMenuOffset + subMenuWidth) > MainWindowWidth){                  
+            if((subMenuOffset + subMenuWidth) > MainWindowWidth){
                 var newSubMenuPosition = subMenuWidth + 3;
                 $(this).find('.nav-child').first().css({
                     left: -newSubMenuPosition,
@@ -43,7 +43,7 @@ jQuery(document).ready(function() {
         var $form = jQuery(this);
         var request = $form.serialize();
         jQuery($form).find('p.contact-form-respond').remove();
-        var ajax = jQuery.post( "contact-form.php", request )
+        var ajax = jQuery.post( "contact-form.html", request )
             .done(function( data ) {
                 jQuery($form).find('[type="submit"]').attr('disabled', false).parent().prepend('<p class="contact-form-respond highlight">'+data+'</p>');
         })
@@ -52,32 +52,14 @@ jQuery(document).ready(function() {
         })
     });
 
-
-    //mailchimp subscribe form processing
-    jQuery('#signup').on('submit', function( e ) {
-        e.preventDefault();
-        // update user interface
-        jQuery('#response').html('Adding email address...');
-        
-        // Prepare query string and send AJAX request
-        jQuery.ajax({
-            url: 'mailchimp/store-address.php',
-            data: 'ajax=true&email=' + escape(jQuery('#mailchimp_email').val()),
-            success: function(msg) {
-                jQuery('#response').html(msg);
-            }
-        });
-    });
-
 });
 
     //gallery
-    (function($){ 
+    (function($){
         $(window).resize(function(){
             var $windowWidth = $(window).width();
         });
        //$(window).load(function(){
-
 
         var $container = $('#portfolioContainer');
 
@@ -90,7 +72,7 @@ jQuery(document).ready(function() {
                   duration: 800
                 },
                 onLayout: function() {
-                    jQuery('body').scrollspy('refresh');  
+                    jQuery('body').scrollspy('refresh');
                 }
             });
         });
@@ -116,7 +98,7 @@ jQuery(document).ready(function() {
                     var $optionSet = $this.parents('#filtrable');
                     $optionSet.find('.selected').removeClass('selected');
                     $this.addClass('selected');
-              
+
                     // make option object dynamically, i.e. { filter: '.my-filter-class' }
                     var options = {},
                         key = $optionSet.attr('data-option-key'),
@@ -131,7 +113,7 @@ jQuery(document).ready(function() {
                       // otherwise, apply new options
                       $container.isotope( options );
                     }
-                    
+
                     // return false;
                     e.preventDefault();
                 });
