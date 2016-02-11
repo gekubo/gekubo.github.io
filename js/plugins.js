@@ -37,21 +37,6 @@ jQuery(document).ready(function() {
     jQuery('.main-menu-icon').on('click', toggleMobileMenu);
     jQuery('#mainmenu a').on('click', toggleMobileMenu);
 
-    //contact form processing
-    jQuery('form.contact-form').on('submit', function( e ){
-        e.preventDefault();
-        var $form = jQuery(this);
-        var request = $form.serialize();
-        jQuery($form).find('p.contact-form-respond').remove();
-        var ajax = jQuery.post( "contact-form.html", request )
-            .done(function( data ) {
-                jQuery($form).find('[type="submit"]').attr('disabled', false).parent().prepend('<p class="contact-form-respond highlight">'+data+'</p>');
-        })
-            .fail(function( data ) {
-                jQuery($form).find('[type="submit"]').attr('disabled', false).parent().prepend('<p>Mail cannot be sent.</p>');
-        })
-    });
-
 });
 
     //gallery
