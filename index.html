@@ -677,22 +677,22 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="contact-form">
-            <form class="contact-form" method="post" action="https://getform.org/f/7ccb2835-0545-4e12-bd1c-dc1910fdb931" />
+            <form class="contact-form" method="post" name="form" onsubmit='return ok();' action="https://getform.org/f/7ccb2835-0545-4e12-bd1c-dc1910fdb931" />
             <p class="contact-form-name">
               <label for="name">Name
                 <span class="required">*</span>
               </label>
-              <input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control" placeholder="Name" />
+              <input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control" placeholder="Name" required />
             </p>
             <p class="contact-form-email">
               <label for="email">Email
                 <span class="required">*</span>
               </label>
-              <input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control" placeholder="Email" />
+              <input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control" placeholder="Email" required />
             </p>
             <p class="contact-form-message">
               <label for="message">Message</label>
-              <textarea aria-required="true" rows="8" cols="45" name="message" id="message" class="form-control" placeholder="Message"></textarea>
+              <textarea aria-required="true" rows="8" cols="45" name="message" id="message" class="form-control" placeholder="Message" required></textarea>
             </p>
             <p class="contact-form-submit text-center vertical-margin-60">
               <input type="submit" value="Send" id="contact_form_submit" name="contact_submit" class="theme_btn inverse" />
@@ -701,6 +701,30 @@
           </div>
         </div>
 
+        <script type='text/javascript'>
+        function ok(){
+        var send = true;
+
+        if(document.getElementById('name').value.length < 2 ){
+            send = false;
+        }
+
+        var expresion = /^[a-z][\w.-]+@\w[\w.-]+\.[\w.-]*[a-z][a-z]$/i;
+        var email = document.form.email.value;
+        if (!expresion.test(email)){
+            send = false;
+        }
+        if(document.getElementById('message').value.length < 30 ){
+            send = false;
+        }
+
+        if(!send){
+        alert('You should fill-in properly all fields ;-) Try again !');
+        }
+
+        return send;
+        }
+        </script>
       </div>
     </div>
   </section>
