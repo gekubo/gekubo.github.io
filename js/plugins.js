@@ -37,6 +37,22 @@ jQuery(document).ready(function() {
     jQuery('.main-menu-icon').on('click', toggleMobileMenu);
     jQuery('#mainmenu a').on('click', toggleMobileMenu);
 
+    //mailchimp subscribe form processing
+    jQuery('#signup').on('submit', function( e ) {
+        e.preventDefault();
+        // update user interface
+        jQuery('#response').html('Adding email address...');
+
+        // Prepare query string and send AJAX request
+        jQuery.ajax({
+            url: 'mailchimp/store-address.php',
+            data: 'ajax=true&email=' + escape(jQuery('#mailchimp_email').val()),
+            success: function(msg) {
+                jQuery('#response').html(msg);
+            }
+        });
+    });
+
 });
 
     //gallery
