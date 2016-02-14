@@ -744,11 +744,11 @@ padding: 0 30px 0 30px;
     .sf-menu > li > a, .is-sticky .sf-menu > li > a {
         padding: 4px 0;
         margin:10px ;
-        text-align: center;
+        text-align: right;
         border-left: none;
     }
     .sf-menu ul {
-        text-align: center;
+        text-align: right;
         position: static;
         display: block !important;
         opacity: 1 !important;
@@ -3113,13 +3113,14 @@ a.socialico-behance:before {content: "\e67b";}
 a.socialico-facebook:before {content: "\e65a";}
 a.socialico-twitter:before {content: "\e65d";}
 a.socialico-skype:before {content: "\e6dd";}
-a.socialico-tumblr:before {content: "T";}
-a.socialico-flickr:before {content: "N";}
+a.socialico-tumblr:before {content: "\e704";}
+a.socialico-instagram:before {content: "\e72b";}
+a.socialico-flickr:before {content: "\e660";}
 a.socialico-deviantart:before {content: "\e674";}
 a.socialico-vimeo:before {content: "\e670";}
 a.socialico-youtube:before {content: "\e66f";}
 a.socialico-phone:before {content: "\e679";}
-a.socialico-paypal:before {content: "P";}
+a.socialico-paypal:before {content: "\e6ba";}
 a.socialico-websq:before {content: "\e661";}
 a.socialico-rsssq:before {content: "\e66a";}
 a.socialico-twittersq:before {content: "\e65e";}
@@ -3127,17 +3128,18 @@ a.socialico-facebooksq:before {content: "\e65b";}
 a.socialico-googlesq:before {content: "\e667";}
 
 /*colors for used social icons*/
-a.socialico-academia:before {color:#428799;}
-a.socialico-linkedin:before {color:#4578B2;}
-a.socialico-xing:before {color:#0B6463;}
-a.socialico-google:before {color:#BE463A;}
-a.socialico-github:before {color:#8A4A9B;}
-a.socialico-behance:before {color:#1A62F9;}
-a.socialico-twitter:before {color:#1E9BE4;}
-a.socialico-facebook:before {color:#3b5998;}
-a.socialico-skype:before {color:#2BA7E6;}
+a.socialico-academia:before {color:#34465d;}
+a.socialico-linkedin:before {color:#0077b5;}
+a.socialico-xing:before {color:#00b489;}
+a.socialico-google:before {color:#dc4e41;}
+a.socialico-github:before {color:#8a4a9b;}
+a.socialico-behance:before {color:#1a62f9;}
+a.socialico-twitter:before {color:#55acee;}
+a.socialico-facebook:before {color:#3b5999;}
+a.socialico-skype:before {color:#00aff0;}
 a.socialico-flickr:before {color:#ff0084;}
+a.socialico-instagram:before {color:#3f729b;}
 a.socialico-websq:before {color: #ffa928;}
-a.socialico-twittersq:before {color:#1E9BE4;}
-a.socialico-facebooksq:before {color:#3b5998;}
-a.socialico-googlesq:before {color:#D13630;}
+a.socialico-twittersq:before {color:#55acee;}
+a.socialico-facebooksq:before {color:#3b5999;}
+a.socialico-googlesq:before {color:#dc4e41;}
